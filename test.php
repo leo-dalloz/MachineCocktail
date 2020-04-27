@@ -15,7 +15,7 @@ if(isset($_POST['test']))
 
 	else if( $test == 0 AND isset($_POST['cocktail']))
 	{
-		$var = $var . $_POST['cocktail'];
+		$var = $var . " " . $_POST['cocktail'];
 		fwrite($file, $var);
 	}
 }

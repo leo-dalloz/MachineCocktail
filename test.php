@@ -1,7 +1,7 @@
 <?php 
-if (isset($_POST('test')))
+if(isset($_POST['test']))
 {
-	$test = $_POST('test');
+	$test = $_POST['test'];
 	$var = file_get_contents("ListeCocktail.txt");
 
 	if( $test == 1)
@@ -13,9 +13,9 @@ if (isset($_POST('test')))
 		fwrite($file, implode(" ", $var));
 	}
 
-	else if( $test == 0 && isset($_POST('cocktail')))
+	else if( $test == 0 AND isset($_POST['cocktail']))
 	{
-		$var = $var . $_POST('cocktail');
+		$var = $var . $_POST['cocktail'];
 	}
 }
 

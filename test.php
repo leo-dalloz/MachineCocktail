@@ -1,6 +1,6 @@
 <?php 
  header("Access-Control-Allow-Origin: *");
- 
+
 if(isset($_POST['test']))
 {
 	$test = $_POST['test'];
@@ -22,5 +22,4 @@ if(isset($_POST['test']))
 	}
 }
 
-
- ?>
+header('Location: http://leodalloz.alwaysdata.net/index.html');

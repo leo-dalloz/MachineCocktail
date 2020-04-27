@@ -9,14 +9,14 @@ if(isset($_POST['test']))
 		$var = explode(" ", $var);
 		echo($var[0]);
 		array_shift($var);
-		$file = fopen("ListeCocktail.txt", "wb");
-		fwrite($file, implode(" ", $var));
 	}
 
 	else if( $test == 0 AND isset($_POST['cocktail']))
 	{
 		$var = $var . $_POST['cocktail'];
 	}
+		$file = fopen("ListeCocktail.txt", "wb");
+		fwrite($file, implode(" ", $var));
 }
 
 

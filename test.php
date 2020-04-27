@@ -13,7 +13,7 @@ if(isset($_POST['test']))
 		fwrite($file, implode(" ", $var));
 	}
 
-	else if( $test == 0 AND isset($_POST['cocktail']))
+	else if( $test == 0 AND isset($_POST['cocktail']) AND $_POST['cocktail'] != "")
 	{
 		$var = $var . " " . $_POST['cocktail'];
 		fwrite($file, $var);

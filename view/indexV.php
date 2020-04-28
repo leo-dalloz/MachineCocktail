@@ -38,21 +38,20 @@ $tab_cocktail = getCocktails();
 			    	<? echo '<button type="button" class="btn btn-primary btn-fabriquer" data-toggle="modal" data-target="#exampleModal" value="' . str_replace(' ', '', $cocktail->getNom()) . '">' 
 			    		. 'Fabriquer 
 			    	</button>'?>
-			    	<p>Test</p>
 				  </div>
 				</div>
 			<?php } ?>
 		</div>
 	</div>
 	<!-- Animation valide -->
-	<div class="success-checkmark">
+
 	  	<div class="check-icon">
 		    <span class="icon-line line-tip"></span>
 		    <span class="icon-line line-long"></span>
 		    <div class="icon-circle"></div>
 		    <div class="icon-fix"></div>
 	  	</div>
-	</div>
+
 	<!-- Modal -->
 	<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">

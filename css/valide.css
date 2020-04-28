@@ -2,10 +2,7 @@
  * Extracted from: SweetAlert
  * Modified by: Istiak Tridip
  */
-.success-checkmark {
-    width: 80px;
-    height: 115px;
-    margin: 0 auto;
+
     
     .check-icon {
         width: 80px;
@@ -90,7 +87,7 @@
             background-color: #FFFFFF;
         }
     }
-}
+
 
 @keyframes rotate-circle {
     0% {

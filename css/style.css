@@ -5,5 +5,8 @@
 }
 
 #animation-valide {
-	position:absolute; right:3%; bottom:1%;
+	position: -webkit-sticky;
+	position: sticky;
+	right: 2%;
+	bottom: 3%;
 }

@@ -65,22 +65,8 @@ $tab_cocktail = getCocktails();
 	  </div>
 	</div>
 
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-	
-
 	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/bootstrap.min"></script>
 	<script type="text/javascript" src="../js/script.js"></script>
 </body>
 

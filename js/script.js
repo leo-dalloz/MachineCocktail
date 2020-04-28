@@ -16,7 +16,6 @@
 				$("#animation-valide").hide("slow");
 			}, 2000);
 		})
-
 	});
 
 

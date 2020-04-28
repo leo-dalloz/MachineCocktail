@@ -1,9 +1,9 @@
 (function(){
 	
 	$(document).ready( function(){
-		var cocktailName = ""; 
 		$(".btn-fabriquer").click(function(){
-			cocktailName = this.value;
+			var cocktailName = this.value;
+			console.log(cocktailName);
 		})
 		$(".btn-fabriquer-ok").click(function(){
 			console.log(cocktailName);

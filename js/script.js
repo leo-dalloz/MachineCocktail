@@ -14,7 +14,7 @@
 			$("#animation-valide").show();
 			setTimeout(function(){
 				$("#animation-valide").hide("slow");
-			}, 2000);
+			}, 5000);
 		})
 	});
 

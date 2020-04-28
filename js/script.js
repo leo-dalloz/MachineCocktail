@@ -4,7 +4,6 @@
 		var cocktailName = ""
 		$(".btn-fabriquer").click(function(){
 			cocktailName = this.value;
-			$(".container").hide();
 		})
 		$(".btn-fabriquer-ok").click(function(){
 			var xhr = new XMLHttpRequest();

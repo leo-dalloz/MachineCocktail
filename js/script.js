@@ -1,6 +1,7 @@
 (function(){
 
 	$(document).ready( function(){
+		$(".check-icon").hide();
 		var cocktailName = ""
 		$(".btn-fabriquer").click(function(){
 			cocktailName = this.value;
@@ -11,9 +12,9 @@
 			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 			xhr.send('test=0&cocktail=' + cocktailName);
 
-			$("#animation-valide").show();
+			$(".check-icon").show();
 			setTimeout(function(){
-				$("#animation-valide").hide("slow");
+				$(".check-icon").hide("slow");
 			}, 5000);
 		})
 	});

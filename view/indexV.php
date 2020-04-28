@@ -45,17 +45,14 @@ $tab_cocktail = getCocktails();
 		</div>
 	</div>
 	<!-- Animation valide -->
-	<div id="animation-valide" class="animated bounceOutLeft" style="display: none;">
-		<div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
-		 	<div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
-		  	<span class="swal2-success-line-tip"></span>
-		  	<span class="swal2-success-line-long"></span>
-			<div class="swal2-success-ring"></div> 
-	   		<div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
-			<div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+	<div class="success-checkmark">
+	  	<div class="check-icon">
+		    <span class="icon-line line-tip"></span>
+		    <span class="icon-line line-long"></span>
+		    <div class="icon-circle"></div>
+		    <div class="icon-fix"></div>
 	  	</div>
 	</div>
-
 	<!-- Modal -->
 	<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">

@@ -1,12 +1,12 @@
 (function(){
 
 	$(document).ready( function(){
+		var cocktailName = ""
 		$(".btn-fabriquer").click(function(){
-			var cocktailName = this.value;
-			console.log(cocktailName);
+			cocktailName = this.value;
+			$(".container").hide();
 		})
 		$(".btn-fabriquer-ok").click(function(){
-			console.log(cocktailName);
 			var xhr = new XMLHttpRequest();
 			xhr.open('POST', 'http://leodalloz.alwaysdata.net/test.php');
 			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");

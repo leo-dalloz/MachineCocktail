@@ -34,10 +34,7 @@ $tab_cocktail = getCocktails();
 				  	<?php echo '<h6 class="card-subtitle mb-2 text-muted">' . $cocktail->getIngredients() . '</h6>' ?>
 				    
 				    <p class="card-text">La boisson traditionnelle du bloc.</p>
-			    	<!--<? echo '<button type="button" class="btn btn-primary btn-fabriquer" data-toggle="modal" data-target="#exampleModal" value="' . $cocktail->getNom() . '">'?> -->
-		    		<button type="button" class="btn btn-primary btn-fabriquer" data-toggle="modal" data-target="#exampleModal" value="Test">
-					  Fabriquer
-					</button>
+			    	<? echo '<button type="button" class="btn btn-primary btn-fabriquer" data-toggle="modal" data-target="#exampleModal" value="' . $cocktail->getNom() . '">'?> 
 				  </div>
 				</div>
 			<?php } ?>

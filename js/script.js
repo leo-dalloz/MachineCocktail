@@ -1,6 +1,5 @@
 (function(){
-		console.log("test");
-	
+
 	$(document).ready( function(){
 		$(".btn-fabriquer").click(function(){
 			var cocktailName = this.value;

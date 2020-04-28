@@ -9,9 +9,8 @@ function getCocktails()
     $dbResult = testError($dbLink,$query);
     while($dbRow = mysqli_fetch_assoc($dbResult))
     {
-    	$test = new Cocktail($dbRow['idCocktail']);
-    	$test->getNom() . " ";
-        $tab_cocktail[] = $test;
+    	echo $dbRow['idCocktail'] . " "
+        $tab_cocktail[] =  new Cocktail($dbRow['idCocktail']);
     }
     return $tab_cocktail;
 }

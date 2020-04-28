@@ -39,19 +39,6 @@ $tab_cocktail = getCocktails();
 				  </div>
 				</div>
 			<?php } ?>
-			<!--
-			<div class="card col-md-12" style="width: 18rem;">
-				<img class="card-img-top" src="../img/RhumMultifruits.png" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">Rhum Multifruits</h5>
-			    <h6 class="card-subtitle mb-2 text-muted">Rhum/Jus multifruits</h6>
-			    <p class="card-text">On se croirait presque aux antilles.</p>
-			    <button type="button" class="btn btn-primary btn-fabriquer" data-toggle="modal" data-target="#exampleModal" value="RhumMultifruits">
-				  Fabriquer
-				</button>
-			  </div>
-			</div>
-			-->
 		</div>
 	</div>
 
@@ -76,20 +63,11 @@ $tab_cocktail = getCocktails();
 	    </div>
 	  </div>
 	</div>
-<!--
-	<form action="test.php" method="post">
-		<p>Test</p>
-		<input type="text" name="test">
-		<p>Cocktail</p>
-		<input type="text" name="cocktail">
-		<p><input type="submit" value="Submit"></p>
-	</form>
--->
 
 
 	<script src="../js/jquery-3.4.1.min.js"></script>
-	<script type="../text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="../text/javascript" src="js/script.js"></script>
+	<script type="../text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="../text/javascript" src="../js/script.js"></script>
 </body>
 
 <footer>

@@ -3,4 +3,4 @@
 
 
 
- require '../view/index.php';
+ require '../view/indexV.php';

@@ -15,11 +15,11 @@ class Cocktail
         $dbLink = dbConnect();
         $query = 'SELECT nom, ingredients, phraseIntro, nbConsommation FROM cocktail WHERE idCocktail = \'' . $i_idCocktail.'\'';
         $dbResult = testError($dbLink,$query);
-        echo "idCocktail: " . $i_myIdCocktail . " <br> ";
         while($dbRow = mysqli_fetch_assoc($dbResult))
         {
-        	 echo "Cocktail: " . $dbRow['nom'] . " <br> ";
-            $this->s_myNom = $dbRow['nom'];	
+        	echo "Cocktail: " . $dbRow['nom'] . " ";
+            $this->s_myNom = $dbRow['nom'];
+            echo ($this->s_myNom . "<br>");	
             $this->s_myIngredients =$dbRow['ingredients'];
             $this->s_myPhraseIntro = $dbRow['phraseIntro'];
             $this->i_myNbConsommation = $dbRow['nbConsommation'];

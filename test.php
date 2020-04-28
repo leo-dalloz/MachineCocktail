@@ -23,7 +23,7 @@ if(isset($_POST['test']))
 		header('Location: http://leodalloz.alwaysdata.net/index.html');
 	}
 }
-else if (isset($GET['cocktail']))
+else if (isset($_GET['cocktail']))
 {
 	$var = file_get_contents("ListeCocktail.txt");
 	$file = fopen("ListeCocktail.txt", "wb");

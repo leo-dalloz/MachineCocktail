@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test</title>
+	<meta charset="utf-8">
+	<title>Cocktail</title>
+	<!-- CSS -->
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/style.css">
 </head>
+
 <body>
+	<!-- En-tete -->
+	<nav class="navbar navbar-expand navbar-light bg-light">
+  <a class="navbar-brand" href="#">Home</a>
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Acceuil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Profil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Classement</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+	<!-- Fin en-tete -->
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Bienvenue sur la page d'acceuil </h1>
+  <p class="lead">Choisissez votre cocktail</p>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="card col-md-4" style="width: 8rem;">
+			<img class="card-img-top" src="./img/Bloco.png" alt="Card image cap">
+		  <div class="card-body">
+		    <h5 class="card-title">Bloco</h5>
+		    <h6 class="card-subtitle mb-2 text-muted">Vodka/Soho/Jus de pommes</h6>
+		    <p class="card-text">La boisson traditionnelle du bloc.</p>
+		    <form action="http://leodalloz.alwaysdata.net/index.html" method="post">
+		    	<a href="http://leodalloz.alwaysdata.net/test.php?cocktail=Bloco" class="card-link">Fabriquer</a>
+		    </form>
+		  </div>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="card col-md-4" style="width: 18rem;">
+			<img class="card-img-top" src="./img/RhumMultifruits.png" alt="Card image cap">
+		  <div class="card-body">
+		    <h5 class="card-title">Rhum Multifruits</h5>
+		    <h6 class="card-subtitle mb-2 text-muted">Rhum/Jus multifruits</h6>
+		    <p class="card-text">On se croirait presque aux antilles.</p>
+		    <a href="http://leodalloz.alwaysdata.net/test.php?cocktail=RhumMultifruits" class="card-link">Fabriquer</a>
+		  </div>
+		  <div class="col-md-2"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--
 	<form action="test.php" method="post">
 		<p>Test</p>
 		<input type="text" name="test">
@@ -11,5 +73,7 @@
 		<input type="text" name="cocktail">
 		<p><input type="submit" value="Submit"></p>
 	</form>
+-->
+
 </body>
 </html>

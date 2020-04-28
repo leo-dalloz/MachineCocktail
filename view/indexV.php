@@ -68,7 +68,7 @@ $tab_cocktail = getCocktails();
 
 
 	<script src="../js/jquery-3.4.1.min.js"></script>
-	<script type="../text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
 </body>
 
 <footer>

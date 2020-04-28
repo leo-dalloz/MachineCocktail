@@ -1,7 +1,7 @@
 (function(){
+		console.log("test");
 	
 	$(document).ready( function(){
-		console.log("test");
 		$(".btn-fabriquer").click(function(){
 			var cocktailName = this.value;
 			console.log(cocktailName);

@@ -4,7 +4,7 @@
   <div class="collapse navbar-collapse" id="navbarColor03">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="../controller/profileC.php" style="font-size: 2rem;">Profil</a>
+        <a class="nav-link" href="../controller/profileC.php" style="font-size: 3rem;">Profil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" style="font-size: 2rem;">Classement</a>

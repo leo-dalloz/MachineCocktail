@@ -10,7 +10,6 @@ function getCocktails()
     while($dbRow = mysqli_fetch_assoc($dbResult))
     {
     	$test = new Cocktail($dbRow['idCocktail']);
-    	//echo ($test->getNom() . " - ");
         $tab_cocktail[] =  $test;
     }
     return $tab_cocktail;

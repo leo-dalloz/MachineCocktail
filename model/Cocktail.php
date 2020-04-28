@@ -27,26 +27,26 @@ class Cocktail
 
 	public function getIdCocktail()
 	{
-		return $this->$i_myIdCocktail;
+		return $this->i_myIdCocktail;
 	}
 
 	public function getNom()
 	{
-		return $this->$s_myNom;
+		return $this->s_myNom;
 	}
 
 	public function getIngredients()
 	{
-		return $this->$s_myIngredients;
+		return $this->s_myIngredients;
 	}
 
 	public function getPhraseIntro()
 	{
-		return $this->$s_myPhraseIntro;
+		return $this->s_myPhraseIntro;
 	}
 
 	public function getNbConsommation()
 	{
-		return $this->$i_myNbConsommation;
+		return $this->i_myNbConsommation;
 	}
 }

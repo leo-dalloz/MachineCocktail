@@ -1,5 +1,6 @@
 
 <?php 
+ require '../controller/indexC.php';
 $tab_cocktail = getCocktails(); 
 ?>
 

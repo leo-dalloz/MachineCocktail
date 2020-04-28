@@ -1,11 +1,12 @@
 <?php 
  header("Access-Control-Allow-Origin: *");
 
+
 if(isset($_POST['test']))
 {
-	$test = $_POST['test'];
 	$var = file_get_contents("ListeCocktail.txt");
 	$file = fopen("ListeCocktail.txt", "wb");
+	$test = $_POST['test'];
 
 	if( $test == 1)
 	{
@@ -21,6 +22,14 @@ if(isset($_POST['test']))
 		fwrite($file, $var);
 		header('Location: http://leodalloz.alwaysdata.net/index.html');
 	}
+}
+else if (isset($GET['cocktail']))
+{
+	$var = file_get_contents("ListeCocktail.txt");
+	$file = fopen("ListeCocktail.txt", "wb");
+	$var = $var . $_GET['cocktail'] . " ";
+		fwrite($file, $var);
+		header('Location: http://leodalloz.alwaysdata.net/index.html');
 }
 
 

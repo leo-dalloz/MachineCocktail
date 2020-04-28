@@ -32,7 +32,7 @@ class Cocktail
 
 	public function getNom()
 	{
-		echo 'bonjour';
+		echo $this->$s_myNom;
 		return $this->$s_myNom;
 	}
 

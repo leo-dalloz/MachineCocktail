@@ -20,7 +20,7 @@ if(isset($_POST['test']))
 	{
 		$var = $var . $_POST['cocktail'] . " ";
 		fwrite($file, $var);
-		header('Location: view/indexV.php');
+		header('Location: controller/indexC.php');
 	}
 }
 

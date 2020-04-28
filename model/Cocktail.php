@@ -18,6 +18,7 @@ class Cocktail
         while($dbRow = mysqli_fetch_assoc($dbResult))
         {
             $this->s_myNom = $dbRow['nom'];
+    		echo $this->$s_myNom;		
             $this->s_myIngredients =$dbRow['ingredients'];
             $this->s_myPhraseIntro = $dbRow['phraseIntro'];
             $this->i_myNbConsommation = $dbRow['nbConsommation'];
@@ -32,7 +33,6 @@ class Cocktail
 
 	public function getNom()
 	{
-		echo $this->$s_myNom;
 		return $this->$s_myNom;
 	}
 

@@ -16,14 +16,15 @@ $tab_cocktail = getCocktails();
 </head>
 
 <body>
+	<!-- Navbar -->
+	<?php include 'navbar.php' ?>
 
-<?php include 'navbar.php' ?>
-
-
+	<!-- Bandeau de la plage -->
 	<div class="jumbotron" style="height: 21rem;">
 	  <h1 class="display-4" style="font-size: 4rem;">Bienvenue sur la page d'acceuil </h1>
 	  <p class="lead" style="font-size: 2rem;"> Choisissez votre cocktail</p>
 	</div>
+	<!-- Liste cocktail -->
 	<div class="container">
 		<div class="row">
 			<?php foreach($tab_cocktail as $cocktail) { ?>
@@ -37,12 +38,23 @@ $tab_cocktail = getCocktails();
 			    	<? echo '<button type="button" class="btn btn-primary btn-fabriquer" data-toggle="modal" data-target="#exampleModal" value="' . str_replace(' ', '', $cocktail->getNom()) . '">' 
 			    		. 'Fabriquer 
 			    	</button>'?>
+			    	<p>Test</p>
 				  </div>
 				</div>
 			<?php } ?>
 		</div>
 	</div>
-
+	<!-- Animation valide -->
+	<div id="animation-valide" class="animated bounceOutLeft" style="display: none;">
+		<div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+		 	<div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+		  	<span class="swal2-success-line-tip"></span>
+		  	<span class="swal2-success-line-long"></span>
+			<div class="swal2-success-ring"></div> 
+	   		<div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+			<div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+	  	</div>
+	</div>
 
 	<!-- Modal -->
 	<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -65,21 +77,10 @@ $tab_cocktail = getCocktails();
 	  </div>
 	</div>
 
+
+
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/script.js"></script>
 </body>
-
-<footer>
-	<div id="animation-valide" class="animated bounceOutLeft" style="display: none;">
-		<div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
-		 	<div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
-		  	<span class="swal2-success-line-tip"></span>
-		  	<span class="swal2-success-line-long"></span>
-			<div class="swal2-success-ring"></div> 
-	   		<div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
-			<div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
-	  	</div>
-	</div>
-</footer>
 </html>

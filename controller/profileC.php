@@ -1,3 +1,3 @@
 <?php 
 
- require '../view/profileC.php';
+ require '../view/profileV.php';

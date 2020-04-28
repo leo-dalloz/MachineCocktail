@@ -20,7 +20,7 @@ if(isset($_POST['test']))
 	{
 		$var = $var . $_POST['cocktail'] . " ";
 		fwrite($file, $var);
-		header('Location: http://leodalloz.alwaysdata.net/index.html');
+		header('Location: view/indexV.php');
 	}
 }
 

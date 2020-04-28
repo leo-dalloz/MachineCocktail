@@ -4,7 +4,7 @@ function dbConnect()
 {
     $dbLink = mysqli_connect('mysql-leodalloz.alwaysdata.net', 'leodalloz_admin', 'blocoadmin')
     or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
-    mysqli_select_db($dbLink , 'projet-iut-info_projetphp')
+    mysqli_select_db($dbLink , 'leodalloz_cocktail')
     or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink));
     return $dbLink;
 }

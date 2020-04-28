@@ -18,11 +18,17 @@ class Cocktail
         while($dbRow = mysqli_fetch_assoc($dbResult))
         {
             $this->s_myNom = $dbRow['nom'];
+            echo $this->s_myNom . 'lol';
             $this->s_myIngredients =$dbRow['ingredients'];
             $this->s_myPhraseIntro = $dbRow['phraseIntro'];
             $this->i_myNbConsommation = $dbRow['nbConsommation'];
         }
         $this->i_myIdCocktail = $i_idCocktail;
+	}
+
+	public function getIdCocktail()
+	{
+		return $this->$i_myIdCocktail;
 	}
 
 	public function getNom()

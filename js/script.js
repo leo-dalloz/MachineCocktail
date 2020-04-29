@@ -16,7 +16,7 @@
 			setTimeout(function(){
 				$(".check-icon").hide("slow");
 				document.location.reload(true);
-			}, 5000);
+			}, 2000);
 		})
 	});
 

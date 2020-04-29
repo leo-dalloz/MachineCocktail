@@ -15,7 +15,7 @@
 			$(".check-icon").show();
 			setTimeout(function(){
 				$(".check-icon").hide("slow");
-				window.location.reload();
+				document.location.reload(true);
 			}, 5000);
 		})
 	});

@@ -36,8 +36,8 @@ $tab_cocktail = getCocktails();
 			    	<? echo '<button type="button" class="btn btn-primary btn-fabriquer" data-toggle="modal" data-target="#exampleModal" value="' . str_replace(' ', '', $cocktail->getNom()) . '">' 
 			    		. 'Fabriquer 
 			    	</button>'?>
-				  	<a href="#" class="card-link">Another link</a>
-				  	<a  class="card-link">Test</a>
+				  	<a>Another link</a>
+
 				  </div>
 				</div>
 			<?php } ?>

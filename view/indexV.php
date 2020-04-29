@@ -11,6 +11,7 @@ $tab_cocktail = getCocktails();
 	<!-- CSS -->
 	<link rel="stylesheet"  href="../css/bootstrap.min.css">
 	<link rel="stylesheet"  href="../css/style.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -37,6 +38,7 @@ $tab_cocktail = getCocktails();
 			    		. 'Fabriquer 
 			    	</button>'?>
 			    	<?php echo '<a>' . $cocktail->getNbConsommation() . '</a>' ?>
+			    	<i class="fas fa-cocktail"></i>
 				  </div>
 				</div>
 			<?php } ?>

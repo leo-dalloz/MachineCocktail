@@ -28,7 +28,7 @@ $tab_cocktail = getCocktails();
 	<div class="container">
 		<div class="row">
 			<?php foreach($tab_cocktail as $cocktail) { ?>
-				<div class="card col-md-5 col-xs-12" style="width: 18rem; margin-bottom: 5rem;">
+				<div class="card col-md-12" style="width: 18rem; margin-bottom: 5rem;">
 					<? echo '<img class="card-img-top" src="../img/' . $cocktail->getNom() . '.png" alt="Card image cap">'?>
 				  	<div class="card-body">
 				  	<?echo '<h5 class="card-title">' . $cocktail->getNom() . '</h5>' ?>

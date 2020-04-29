@@ -20,7 +20,7 @@ if(isset($_POST['test']))
 	{
 		$s_nomCocktail = str_replace(' ', '', $_POST['cocktail']);
 		$dbLink = dbConnect();
-        $query = 'UPDATE cocktail SET nbConsommation = nbConsommation + 1 WHERE nom =' . $s_nomCocktail;
+        $query = "UPDATE cocktail SET nbConsommation = nbConsommation + 1 WHERE nom = '$s_nomCocktail'";
         testError($dbLink,$query);
  
 		$var = $var . $s_nomCocktail . " ";

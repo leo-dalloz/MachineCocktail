@@ -1,6 +1,6 @@
 <?php 
  header("Access-Control-Allow-Origin: *");
-require 'db.php';
+require 'model/db.php';
 
 if(isset($_POST['test']))
 {
@@ -19,8 +19,8 @@ if(isset($_POST['test']))
 	else if( $test == 0 AND isset($_POST['cocktail']) AND $_POST['cocktail'] != "")
 	{
 		
-
 		$var = $var . str_replace(' ', '', $_POST['cocktail']) . " ";
+		echo str_replace(' ', '', $_POST['cocktail']);
 		fwrite($file, $var);
 		header('Location: controller/indexC.php');
 	}

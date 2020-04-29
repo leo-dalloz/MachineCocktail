@@ -27,8 +27,12 @@ $tab_cocktail = getCocktails();
 	<!-- Liste cocktail -->
 	<div class="container">
 		<div class="row">
-			<?php foreach($tab_cocktail as $cocktail) { ?>
-				<div class="card col-md-12" style="width: 18rem; margin-bottom: 5rem;">
+
+			<?php 
+			$b_isFirst = true;
+			foreach($tab_cocktail as $cocktail) { 
+			?>
+				<div class="card col-md-5 col-xs-12" style="width: 18rem;  margin-bottom: 5rem;">
 					<? echo '<img class="card-img-top" src="../img/' . $cocktail->getNom() . '.png" alt="Card image cap">'?>
 				  	<div class="card-body">
 				  	<?echo '<h5 class="card-title">' . $cocktail->getNom() . '</h5>' ?>
@@ -40,8 +44,17 @@ $tab_cocktail = getCocktails();
 			    	<?php echo '<a>' . $cocktail->getNbConsommation() . '</a>' ?>
 			    	<i class="fas fa-cocktail"></i>
 				  </div>
-				</div>
-			<?php } ?>
+				</div>	
+			<?php
+				if($b_isFirst)
+				{
+					?>
+					<div class="card col-md-2 col-xs-12"></div>
+					<?php 
+					$b_isFirst = ! $b_isFirst;
+				}
+			} 
+			?>
 		</div>
 	</div>
 	<!-- Animation valide -->

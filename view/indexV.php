@@ -11,8 +11,6 @@ $tab_cocktail = getCocktails();
 	<!-- CSS -->
 	<link rel="stylesheet"  href="../css/bootstrap.min.css">
 	<link rel="stylesheet"  href="../css/style.css">
-	
-	
 </head>
 
 <body>
@@ -39,6 +37,8 @@ $tab_cocktail = getCocktails();
 			    		. 'Fabriquer 
 			    	</button>'?>
 				  </div>
+				  <a href="#" class="card-link">Another link</a>
+				  <p  class="card-link">Test</p>
 				</div>
 			<?php } ?>
 		</div>

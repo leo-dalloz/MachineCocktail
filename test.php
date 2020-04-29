@@ -1,7 +1,6 @@
 <?php 
  header("Access-Control-Allow-Origin: *");
 
-
 if(isset($_POST['test']))
 {
 	$var = file_get_contents("ListeCocktail.txt");

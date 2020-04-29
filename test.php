@@ -18,12 +18,11 @@ if(isset($_POST['test']))
 
 	else if( $test == 0 AND isset($_POST['cocktail']) AND $_POST['cocktail'] != "")
 	{
-		$s_nomCocktail = str_replace(' ', '', $_POST['cocktail']);
 		$dbLink = dbConnect();
-        $query = "UPDATE cocktail SET nbConsommation = nbConsommation + 1 WHERE nom = '$s_nomCocktail'";
+        $query = "UPDATE cocktail SET nbConsommation = nbConsommation + 1 WHERE nom = '$_POST['cocktail']'";
         testError($dbLink,$query);
  
-		$var = $var . $s_nomCocktail . " ";
+		$var = $var . str_replace(' ', '', $_POST['cocktail']) . " ";
 		fwrite($file, $var);
 		header('Location: controller/indexC.php');
 	}

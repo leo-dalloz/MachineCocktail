@@ -28,7 +28,7 @@ $tab_cocktail = getCocktails();
 			<?php foreach($tab_cocktail as $cocktail) { ?>
 				<div class="card col-md-12" style="width: 18rem; margin-bottom: 5rem;">
 					<? echo '<img class="card-img-top" src="../img/' . $cocktail->getNom() . '.png" alt="Card image cap">'?>
-				  <div class="card-body">
+				  	<div class="card-body">
 				  	<?echo '<h5 class="card-title">' . $cocktail->getNom() . '</h5>' ?>
 				  	<?php echo '<h6 class="card-subtitle mb-2 text-muted">' . $cocktail->getIngredients() . '</h6>' ?>
 				    
@@ -36,8 +36,8 @@ $tab_cocktail = getCocktails();
 			    	<? echo '<button type="button" class="btn btn-primary btn-fabriquer" data-toggle="modal" data-target="#exampleModal" value="' . str_replace(' ', '', $cocktail->getNom()) . '">' 
 			    		. 'Fabriquer 
 			    	</button>'?>
-				  <a href="#" class="card-link">Another link</a>
-				  <p  class="card-link">Test</p>
+				  	<a href="#" class="card-link">Another link</a>
+				  	<a  class="card-link">Test</a>
 				  </div>
 				</div>
 			<?php } ?>

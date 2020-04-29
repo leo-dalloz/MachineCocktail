@@ -18,8 +18,9 @@ if(isset($_POST['test']))
 
 	else if( $test == 0 AND isset($_POST['cocktail']) AND $_POST['cocktail'] != "")
 	{
+		$s_nomCocktail =  $_POST['cocktail'];
 		$dbLink = dbConnect();
-        $query = "UPDATE cocktail SET nbConsommation = nbConsommation + 1 WHERE nom = '$_POST['cocktail']'";
+        $query = "UPDATE cocktail SET nbConsommation = nbConsommation + 1 WHERE nom = '$s_nomCocktail'";
         testError($dbLink,$query);
  
 		$var = $var . str_replace(' ', '', $_POST['cocktail']) . " ";

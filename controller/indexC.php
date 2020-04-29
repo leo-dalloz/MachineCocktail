@@ -1,8 +1,6 @@
+
+<meta http-equiv="refresh" content="1">
 <?php 
 require '../model/indexM.php';
-
-
-ob_start();
 require '../view/indexV.php';
-ob_end_flush();
  ?>

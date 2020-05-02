@@ -33,7 +33,7 @@ if(isset($_POST['pseudo']) AND isset($_POST['prenom']) AND isset($_POST['nom']) 
 	$s_passwordVerification = $_POST['passwordVerification'];
 	if($s_pseudo != "" OR $s_prenom != "" OR $s_nom != ""  OR $s_password != ""  OR $s_passwordVerification != "")
 	{
-		if(strlen($s_pseudo ) > 30 OR strlen($s_prenom) > 30 OR strlen($s_nom) > 30 OR strlen($s_password) > 30)
+		if(strlen($s_pseudo) < 30 OR strlen($s_prenom) < 30 OR strlen($s_nom) < 30 OR strlen($s_password) < 30)
 		{
 			if($s_password == $s_passwordVerification)
 			{

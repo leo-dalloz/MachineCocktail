@@ -21,7 +21,7 @@
     </div>
 
     <!-- Login Form -->
-    <form id="form-login" method="post" action="../controller/inscriptionC.php">
+    <form id="form-login" method="post" action="model/inscriptionM.php">
       <input type="text" name="pseudo" class="fadeIn second" placeholder="pseudo">
       <input type="text" name="prenom" class="fadeIn second" placeholder="prénom">
       <input type="text" name="nom" class="fadeIn second" placeholder="nom">
@@ -32,9 +32,6 @@
     <div id="messageErrorInscription" style="display: none; color: red;"></div>
 
     
-
-
-
   </div>
 </div>
 </body>

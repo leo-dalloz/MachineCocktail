@@ -3,7 +3,6 @@
 		'use strict';
 		$(() => {
 			$('#form-login').submit(function (){
-				console.log("test");
 				let form = $(this);
 				$('#messageErrorInscription').fadeOut();
 				$.ajax({
@@ -19,7 +18,6 @@
 							$('#messageErrorInscription').html(data.message).fadeIn();
 						}
 					}).fail(function(){
-						console.log(data);
 						$('body').html("We have a problem Houston&nbsp;!");
 					});
 				return false;

@@ -6,7 +6,7 @@ function addUser($s_pseudo, $s_prenom, $s_nom, $s_password)
  	$dbLink = dbConnect();
     $query = 'SELECT pseudo FROM user WHERE pseudo = \'' . $s_pseudo .'\'';
     $dbResult = testError($dbLink,$query);
-    $rows = $statement->fetchAll();
+    $rows = $dbResult->fetchAll();
     if(count($rows) == 0)
     {
     	$query =    'INSERT INTO user (pseudo, prenom, nom, password)

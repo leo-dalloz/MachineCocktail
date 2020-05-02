@@ -24,15 +24,15 @@ $obj->message = 'Veuillez remplir tous les champs.';
 $obj->success = false;
 
 
-if(isset($__POST['pseudo']) AND isset($__POST['prenom']) AND isset($__POST['nom']) AND isset($__POST['password']) AND isset($__POST['passwordVerification']))
+if(isset($_POST['pseudo']) AND isset($_POST['prenom']) AND isset($_POST['nom']) AND isset($_POST['password']) AND isset($_POST['passwordVerification']))
 {
-	if($__POST['pseudo'] != "" AND $__POST['prenom'] != "" AND $__POST['nom'] != ""  AND $__POST['password'] != ""  AND $__POST['passwordVerification'] != "")
+	if($_POST['pseudo'] != "" AND $_POST['prenom'] != "" AND $_POST['nom'] != ""  AND $_POST['password'] != ""  AND $_POST['passwordVerification'] != "")
 	{
-		if(count($__POST['pseudo']) > 30 OR count($__POST['prenom']) > 30 OR count($__POST['nom']) > 30 OR count($__POST['password']) > 30)
+		if(count($_POST['pseudo']) > 30 OR count($__POST['prenom']) > 30 OR count($__POST['nom']) > 30 OR count($__POST['password']) > 30)
 		{
-			if($__POST['password'] == $__POST['passwordVerification'])
+			if($_POST['password'] == $_POST['passwordVerification'])
 			{
-				if ( addUser($__POST['pseudo'], $__POST['prenom'], $__POST['nom'], $__POST['password']))
+				if ( addUser($_POST['pseudo'], $_POST['prenom'], $_POST['nom'], $_POST['password']))
 				{
 					$obj->success = true;
 				}

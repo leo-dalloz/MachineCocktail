@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Inscription</title>
     <script src="../js/jquery-3.4.1.min.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/inscription.js"></script>
 	<link rel="stylesheet"  href="../css/bootstrap.min.css">
 	<link rel="stylesheet"  href="../css/loginStyle.css">
 </head>
@@ -17,7 +17,7 @@
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <h1>Connexion</h1>
+      <h1>Inscription</h1>
     </div>
 
     <!-- Login Form -->
@@ -29,20 +29,13 @@
       <input type="password" name="passwordVerification" id="password" class="fadeIn third" placeholder="vérification du mot de passe">
       <input type="submit" class="fadeIn fourth" value="Envoyer">
     </form>
-    <p id="messageErrorInscription"></p>
+    <div id="messageErrorInscription" style="display: none; color: red;"></div>
+
+    
 
 
 
   </div>
 </div>
-<!--
-<h1 id="title">Connexion</h1>
-<form id="form-login" method="post" action="../model/login.php">
-    <input type="text" name="username" placeholder="username"/><br>
-    <input type="password" name="password" placeholder="password"/><br>
-    <button type="submit">Envoyer</button>
-</form>
-<div id="messages" style="display: none"></div>
--->
 </body>
 </html>

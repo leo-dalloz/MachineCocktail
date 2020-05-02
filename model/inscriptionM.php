@@ -16,10 +16,6 @@ function addUser($s_pseudo, $s_prenom, $s_nom, $s_password)
                             \'' . $s_nom 	. '\',
                             \'' . password_hash($s_password, PASSWORD_DEFAULT) . '\')';
         testError($dbLink,$query);
-        return 'ok';
-    }
-    else
-    {
-    	return 'Pseudo déjà utilisé';
+        return true;
     }
 }

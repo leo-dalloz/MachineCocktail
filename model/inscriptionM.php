@@ -9,7 +9,7 @@ function addUser($s_pseudo, $s_prenom, $s_nom, $s_password)
     $cpt = 0;
     while($dbRow = mysqli_fetch_assoc($dbResult))
 	{
-		++cpt;
+		$cpt += 1;
 	}
     if($cpt == 0)
     {
@@ -20,7 +20,7 @@ function addUser($s_pseudo, $s_prenom, $s_nom, $s_password)
                             \'' . password_hash($s_password, PASSWORD_DEFAULT) . '\')';
         testError($dbLink,$query);
         return true;
-    }
+    }      
 }
 
 $obj = new stdClass();

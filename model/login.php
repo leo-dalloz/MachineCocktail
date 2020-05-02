@@ -14,7 +14,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 	$resultat = $dbResult->fetch_assoc();
 	if (password_verify($_POST['password'], $resultat['password']))
 	{
-		$_SESSION['user'] = new User ($resultat['idUser']);
+		$_SESSION['user'] = new User($resultat['idUser']);
     	$obj->success = true;
 	}
 }

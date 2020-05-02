@@ -10,7 +10,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 {
 	$obj->test = "c cool";
 	$dbLink = dbConnect();
-	$query = 'SELECT idUser AS idUser, password AS password FROM user WHERE pseudo = \'' . $_POST['username'] . '\'';
+	$query = 'SELECT idUser AS idUser, password AS password FROM 'user' WHERE pseudo = \'' . $_POST['username'] . '\'';
 	$dbResult = testError($dbLink,$query);
 	if ($_POST['password'] == $dbResult['password'])
 	{

@@ -20,7 +20,7 @@ class User
             $this->s_myPseudo =$dbRow['pseudo'];
             $this->s_myPrenom = $dbRow['prenom'];
             $this->s_myNom = $dbRow['nom'];
-            $this->s_myAdmin = $dbRow['admin']
+            $this->s_myAdmin = $dbRow['admin'];
         }
         $this->i_myIdUser = $i_idUser;
 	}

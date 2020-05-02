@@ -31,7 +31,7 @@
     <!-- Remind Passowrd && account -->
     <div id="formFooter">
     	<a>Vous n'avez pas de compte:</a>
-    	<a class="underlineHover" href="#">inscrivez-vous.</a> <br>
+    	<a class="underlineHover" href="inscriptionC.php">inscrivez-vous.</a> <br>
       	<a class="underlineHover" href="#">Mot de passe oublié ?</a>
     </div>
 

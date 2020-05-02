@@ -7,14 +7,18 @@
         }).done(function (data) {
             if (data) {
                 /* le user est connecté */
-                $('#deconnexion').on('click', function () {
-                    $.ajax({
-                        url: 'http://leodalloz.alwaysdata.net/model/logout.php',
-                        method: 'get'
-                    }).done(function () {
-                        window.location.href = 'http://leodalloz.alwaysdata.net/controller/loginC.php';
-                    });
-                })
+                $('#deconnexion').append(
+                    $('<button />')
+                        .html('Déconnexion')
+                        .on('click', function () {
+                            $.ajax({
+                                url: 'http://leodalloz.alwaysdata.net/model/logout.php',
+                                method: 'get'
+                            }).done(function () {
+                                window.location.href = 'http://leodalloz.alwaysdata.net/controller/loginC.php';
+                            });
+                        })
+                );
             } else {
                 /* le user n'est pas connecté */
                 window.location.href = 'http://leodalloz.alwaysdata.net/controller/loginC.php';
@@ -23,6 +27,7 @@
             $('body').html('Une erreur critique est arrivée.');
         });
     });
+
 	$(document).ready( function(){
 		$(".check-icon").hide();
 		var cocktailName = ""

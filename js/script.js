@@ -1,5 +1,7 @@
 (function(){
-'use strict';
+
+	$(document).ready( function(){
+    'use strict';
     $(() => {
         $.ajax({
             url: 'http://leodalloz.alwaysdata.net/model/is_connected.php',
@@ -27,8 +29,6 @@
             $('body').html('Une erreur critique est arrivée.');
         });
     });
-
-	$(document).ready( function(){
 		$(".check-icon").hide();
 		var cocktailName = ""
 		$(".btn-fabriquer").click(function(){

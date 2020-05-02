@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Inscription</title>
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/login.js"></script>
 	<link rel="stylesheet"  href="../css/bootstrap.min.css">
@@ -21,19 +21,17 @@
     </div>
 
     <!-- Login Form -->
-    <form id="form-login" method="post" action="../model/login.php">
-      <input type="text" name="username" id="login" class="fadeIn second" placeholder="pseudo">
+    <form id="form-login" method="post" action="../controller/inscriptionC.php">
+      <input type="text" name="pseudo" id="login" class="fadeIn second" placeholder="pseudo">
+      <input type="text" name="prenom" id="login" class="fadeIn second" placeholder="prénom">
+      <input type="text" name="nom" id="login" class="fadeIn second" placeholder="nom">
       <input type="password" name="password" id="password" class="fadeIn third" placeholder="mot de passe">
-      <input type="submit" class="fadeIn fourth" value="Log In">
+      <input type="password" name="passwordVerification" id="password" class="fadeIn third" placeholder="vérification du mot de passe">
+      <input type="submit" class="fadeIn fourth" value="Envoyer">
     </form>
-    <div id="messages" style="display: none; color: red;"></div>
+    <p id="messageErrorInscription"></p>
 
-    <!-- Remind Passowrd && account -->
-    <div id="formFooter">
-    	<a>Vous n'avez pas de compte:</a>
-    	<a class="underlineHover" href="#">inscrivez-vous.</a> <br>
-      	<a class="underlineHover" href="#">Mot de passe oublié ?</a>
-    </div>
+
 
   </div>
 </div>

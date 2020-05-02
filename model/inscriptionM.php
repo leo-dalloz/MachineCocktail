@@ -4,7 +4,7 @@ require 'db.php';
 function addUser($s_pseudo, $s_prenom, $s_nom, $s_password)
 {
  	$dbLink = dbConnect();
-    $query = 'SELECT username FROM user WHERE username = \'' . $s_pseudo .'\'';
+    $query = 'SELECT pseudo FROM user WHERE username = \'' . $s_pseudo .'\'';
     $dbResult = testError($dbLink,$query);
     $rows = $statement->fetchAll();
     if(count($rows) == 0)

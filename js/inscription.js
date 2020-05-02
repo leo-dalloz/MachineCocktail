@@ -3,6 +3,7 @@
 		'use strict';
 		$(() => {
 			$('#form-login').submit(function (){
+				console.log("test");
 				let form = $(this);
 				$('#messageErrorInscription').fadeOut();
 				$.ajax({
@@ -14,6 +15,7 @@
 							window.location.href = 'http://leodalloz.alwaysdata.net/controller/loginC.php';
 						}
 						else {
+							console.log(data);
 							$('#messageErrorInscription').html(data.message).fadeIn();
 						}
 					}).fail(function(){

@@ -22,11 +22,11 @@
 
     <!-- Login Form -->
     <form id="form-login" method="post" action="../controller/inscriptionC.php">
-      <input type="text" name="pseudo" id="login" class="fadeIn second" placeholder="pseudo">
-      <input type="text" name="prenom" id="login" class="fadeIn second" placeholder="prénom">
-      <input type="text" name="nom" id="login" class="fadeIn second" placeholder="nom">
-      <input type="password" name="password" id="password" class="fadeIn third" placeholder="mot de passe">
-      <input type="password" name="passwordVerification" id="password" class="fadeIn third" placeholder="vérification du mot de passe">
+      <input type="text" name="pseudo" class="fadeIn second" placeholder="pseudo">
+      <input type="text" name="prenom" class="fadeIn second" placeholder="prénom">
+      <input type="text" name="nom" class="fadeIn second" placeholder="nom">
+      <input type="password" name="password" class="fadeIn third" placeholder="mot de passe">
+      <input type="password" name="passwordVerification" class="fadeIn third" placeholder="vérification du mot de passe">
       <input type="submit" class="fadeIn fourth" value="Envoyer">
     </form>
     <div id="messageErrorInscription" style="display: none; color: red;"></div>

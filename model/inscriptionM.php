@@ -1,5 +1,5 @@
 <?php 
-require 'db.php'
+require 'db.php';
 
 
 function addUser($s_pseudo, $s_prenom, $s_nom, $s_password)

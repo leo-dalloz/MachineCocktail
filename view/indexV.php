@@ -1,7 +1,6 @@
 
 <?php 
 session_start();
-require '../model/User.php';
 $tab_cocktail = getCocktails(); 
 ?>
 

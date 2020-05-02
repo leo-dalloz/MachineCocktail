@@ -26,9 +26,9 @@ $obj->success = false;
 
 if(isset($_POST['pseudo']) AND isset($_POST['prenom']) AND isset($_POST['nom']) AND isset($_POST['password']) AND isset($_POST['passwordVerification']))
 {
-	if($_POST['pseudo'] != "" AND $_POST['prenom'] != "" AND $_POST['nom'] != ""  AND $_POST['password'] != ""  AND $_POST['passwordVerification'] != "")
+	if($_POST['pseudo'] != "" OR $_POST['prenom'] != "" OR $_POST['nom'] != ""  OR $_POST['password'] != ""  OR $_POST['passwordVerification'] != "")
 	{
-		if(count($_POST['pseudo']) > 30 OR count($__POST['prenom']) > 30 OR count($__POST['nom']) > 30 OR count($__POST['password']) > 30)
+		if(count($_POST['pseudo']) > 30 OR count($_POST['prenom']) > 30 OR count($_POST['nom']) > 30 OR count($_POST['password']) > 30)
 		{
 			if($_POST['password'] == $_POST['passwordVerification'])
 			{
@@ -46,10 +46,10 @@ if(isset($_POST['pseudo']) AND isset($_POST['prenom']) AND isset($_POST['nom']) 
 				$obj->message = 'Les deux mots de passe ne correspondent pas';
 			}
 		}
-	}
-	else
-	{
-		$obj->message = 'Il faut moins de 30 caractères par champs.';
+		else
+		{
+			$obj->message = 'Il faut moins de 30 caractères par champs.';
+		}
 	}
 }	
 header('Cache-Control: no-cache, must-revalidate');

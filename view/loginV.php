@@ -26,6 +26,7 @@
       <input type="password" name="password" id="password" class="fadeIn third" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
+    <div id="messages" style="display: none"></div>
 
     <!-- Remind Passowrd -->
     <div id="formFooter">

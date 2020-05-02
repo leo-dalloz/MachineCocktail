@@ -2,6 +2,7 @@
 	'use strict';
 	$(() => {
 		$('#form-login').submit(function (){
+			console.log("test");
 			let form = $(this);
 			$('#messages').fadeOut();
 			$.ajax({

@@ -6,7 +6,7 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/login.js"></script>
 	<link rel="stylesheet"  href="../css/bootstrap.min.css">
-	<link rel="stylesheet"  href="../css/loinStyle.css">
+	<link rel="stylesheet"  href="../css/loginStyle.css">
 </head>
 
 <body>
@@ -34,6 +34,7 @@
 
   </div>
 </div>
+<!--
 <h1 id="title">Connexion</h1>
 <form id="form-login" method="post" action="../model/login.php">
     <input type="text" name="username" placeholder="username"/><br>
@@ -41,5 +42,6 @@
     <button type="submit">Envoyer</button>
 </form>
 <div id="messages" style="display: none"></div>
+-->
 </body>
 </html>

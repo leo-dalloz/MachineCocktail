@@ -6,8 +6,12 @@ function addUser($s_pseudo, $s_prenom, $s_nom, $s_password)
  	$dbLink = dbConnect();
     $query = 'SELECT pseudo FROM user WHERE pseudo = \'' . $s_pseudo .'\'';
     $dbResult = testError($dbLink,$query);
-    $rows = $dbResult->fetchAll();
-    if(count($rows) == 0)
+    $cpt = 0;
+    while($dbRow = mysqli_fetch_assoc($dbResult))
+	{
+		++cpt;
+	}
+    if($cpt == 0)
     {
     	$query =    'INSERT INTO user (pseudo, prenom, nom, password)
                     VALUES (\'' . $s_pseudo . '\',

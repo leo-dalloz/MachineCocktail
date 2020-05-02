@@ -3,10 +3,11 @@
 require '../view/inscriptionV.php';
 require '../model/inscriptionM.php';
 
-$obj = new stdClass();
-$obj->message = "";
-$obj->success = false;
+
 if(!empty($_POST)){
+	$obj = new stdClass();
+	$obj->message = "";
+	$obj->success = false;
 	if(isset($__POST['pseudo']) AND isset($__POST['prenom']) AND isset($__POST['nom']) AND isset($__POST['password']) AND isset($__POST['passwordVerification']) AND
 			 $__POST['pseudo'] != "" AND $__POST['prenom'] != "" AND $__POST['nom'] != ""  AND $__POST['password'] != ""  AND $__POST['passwordVerification'] != "")
 	{
@@ -37,10 +38,11 @@ if(!empty($_POST)){
 	{
 		$obj->message = 'Veuillez remplir tous les champs.';
 	}
+	
+	header('Cache-Control: no-cache, must-revalidate');
+	header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+	header('Content-type: application/json');
+
+	echo json_encode($obj);
 }
 
-header('Cache-Control: no-cache, must-revalidate');
-header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
-header('Content-type: application/json');
-
-echo json_encode($obj);

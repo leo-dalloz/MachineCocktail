@@ -17,7 +17,7 @@
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <p>Connexion</p>
+      <h1>Connexion</h1>
     </div>
 
     <!-- Login Form -->

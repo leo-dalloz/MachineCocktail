@@ -14,6 +14,7 @@
 							window.location.href = 'http://leodalloz.alwaysdata.net/controller/indexC.php';
 						}
 						else {
+							console.log(data);
 							$('#messages').html(data.message).fadeIn();
 						}
 					}).fail(function(){

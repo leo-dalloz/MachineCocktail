@@ -1,6 +1,6 @@
 <?php 
 require 'Cocktail.php';
-
+require 'User.php';
 
 function getCocktails()
 {

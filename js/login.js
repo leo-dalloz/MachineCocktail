@@ -3,7 +3,6 @@
 		'use strict';
 		$(() => {
 			$('#form-login').submit(function (){
-				console.log("test");
 				let form = $(this);
 				$('#messages').fadeOut();
 				$.ajax({
@@ -12,9 +11,11 @@
 					data: form.serialize(),
 					}).done(function (data) {
 						if (data.success === true){
+							console.log("testOK");
 							window.location.href = 'http://leodalloz.alwaysdata.net/controller/indexC.php';
 						}
 						else {
+							console.log("testKO");
 							$('#messages').html(data.message).fadeIn();
 						}
 					}).fail(function(){

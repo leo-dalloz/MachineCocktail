@@ -21,7 +21,7 @@
     </div>
 
     <!-- Login Form -->
-    <form id="form-login" method="post" action="..//login.php">
+    <form id="form-login" method="post" action="../model/login.php">
       <input type="text" name="username" id="login" class="fadeIn second" placeholder="login">
       <input type="password" name="password" id="password" class="fadeIn third" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In">

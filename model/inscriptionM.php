@@ -26,13 +26,18 @@ $obj->success = false;
 
 if(isset($_POST['pseudo']) AND isset($_POST['prenom']) AND isset($_POST['nom']) AND isset($_POST['password']) AND isset($_POST['passwordVerification']))
 {
-	if($_POST['pseudo'] != "" OR $_POST['prenom'] != "" OR $_POST['nom'] != ""  OR $_POST['password'] != ""  OR $_POST['passwordVerification'] != "")
+	$s_pseudo 				= $_POST['pseudo'];
+	$s_prenom				= $_POST['prenom'];
+	$s_nom 	  				= $_POST['nom'];
+	$s_password 			= $_POST['password'];
+	$s_passwordVerification = $_POST['passwordVerification'];
+	if($s_pseudo != "" OR $s_prenom != "" OR $s_nom != ""  OR $s_password != ""  OR $s_passwordVerification != "")
 	{
-		if(count($_POST['pseudo']) > 30 OR count($_POST['prenom']) > 30 OR count($_POST['nom']) > 30 OR count($_POST['password']) > 30)
+		if(strlen($s_pseudo ) > 30 OR strlen($s_prenom) > 30 OR strlen($s_nom) > 30 OR strlen($s_password) > 30)
 		{
-			if($_POST['password'] == $_POST['passwordVerification'])
+			if($s_password == $s_passwordVerification)
 			{
-				if ( addUser($_POST['pseudo'], $_POST['prenom'], $_POST['nom'], $_POST['password']))
+				if ( addUser($s_pseudo, $s_prenom, $s_nom, $s_password))
 				{
 					$obj->success = true;
 				}

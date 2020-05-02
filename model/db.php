@@ -8,6 +8,7 @@ function dbConnect()
     or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink));
     return $dbLink;
 }
+
 function testError($dbLink,$query)
 {
     if(!($dbResult = mysqli_query($dbLink, $query)))

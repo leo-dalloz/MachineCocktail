@@ -1,6 +1,5 @@
 <?php
 session_start();
-require 'db.php';
 require 'User.php';
 
 $obj = new stdClass();

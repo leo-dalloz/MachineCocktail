@@ -19,6 +19,7 @@
 							$('#messageErrorInscription').html(data.message).fadeIn();
 						}
 					}).fail(function(){
+						console.log(data);
 						$('body').html("We have a problem Houston&nbsp;!");
 					});
 				return false;

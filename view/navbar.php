@@ -9,6 +9,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#" style="font-size: 3rem;">Classement</a>
       </li>
+       <li class="nav-item">
+        <button type="button" id="deconnexion"class="btn btn-secondary">Déconnexion</button>
+      </li>
     </ul>
   </div>
 </nav>

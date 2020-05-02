@@ -7,18 +7,14 @@
         }).done(function (data) {
             if (data) {
                 /* le user est connecté */
-                $('#profileChoice').append(
-                    $('<button />')
-                        .html('Déconnexion')
-                        .on('click', function () {
-                            $.ajax({
-                                url: 'http://leodalloz.alwaysdata.net/model/logout.php',
-                                method: 'get'
-                            }).done(function () {
-                                window.location.href = 'http://leodalloz.alwaysdata.net/controller/loginC.php';
-                            });
-                        })
-                );
+                $('#deconnexion').on('click', function () {
+                    $.ajax({
+                        url: 'http://leodalloz.alwaysdata.net/model/logout.php',
+                        method: 'get'
+                    }).done(function () {
+                        window.location.href = 'http://leodalloz.alwaysdata.net/controller/loginC.php';
+                    });
+                })
             } else {
                 /* le user n'est pas connecté */
                 window.location.href = 'http://leodalloz.alwaysdata.net/controller/loginC.php';

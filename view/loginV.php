@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Login</title>
     <script src="jquery-3.4.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="login.js"></script>
 </head>
 
 <body>

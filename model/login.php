@@ -13,7 +13,7 @@ if(isset($_POST['username']) && isset($_POST['password']) && $_POST['username'] 
 	$dbLink = dbConnect();
 	$query = 'SELECT idUser AS idUser, password AS password FROM user WHERE pseudo = ' . $_POST['username'];
 	$dbResult = testError($dbLink,$query);
-	if (password_verify($_POST['password'], $dbResult['password']))
+	if ($_POST['password'], $dbResult['password'])
 	{
 		$_SESSION['user'] = $dbResult['idUser'];
     	$obj->success = true;

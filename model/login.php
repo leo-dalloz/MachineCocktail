@@ -1,22 +1,24 @@
 <?php
 session_start();
+require '../model/db.php';
 
-$s_username = 'test';
-$s_password = 'test123';
 $obj = new stdClass();
 $obj->message = "Mauvais nom d'utilisateur ou mauvais mot de passe";
 $obj->success = false;
 
-if(isset($_POST['username']) && isset($_POST['password']))
+if(isset($_POST['username']) && isset($_POST['password']) && $_POST['username'] != NULL && $_POST['password'] != NULL)
 {
-	if($_POST['username'] == $s_username && $_POST['password'] == $s_password)
+
+
+	$dbLink = dbConnect();
+	$query = 'SELECT idUser AS idUser, password AS password FROM user WHERE pseudo = ' . $_POST['username'];
+	$dbResult = testError($dbLink,$query);
+	if (password_verify($_POST['password'], $dbResult['password']))
 	{
-	    $obj->success = true;	
-	} 
-    $_SESSION['user'] = 123;
+		$_SESSION['user'] = $dbResult['idUser'];
+    	$obj->success = true;
+	}
 }
-
-
 
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');

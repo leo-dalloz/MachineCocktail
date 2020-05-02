@@ -17,13 +17,13 @@
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <p>Login</p>
+      <p>Veuillez vous connecter.</p>
     </div>
 
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+    <form id="form-login" method="post" action="..//login.php">
+      <input type="text" name="username" id="login" class="fadeIn second" placeholder="login">
+      <input type="password" name="password" id="password" class="fadeIn third" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
 

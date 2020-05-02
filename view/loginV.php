@@ -28,13 +28,10 @@
     </form>
     <div id="messages" style="display: none; color: red;"></div>
 
-    <!-- Remind Passowrd -->
+    <!-- Remind Passowrd && account -->
     <div id="formFooter">
-    	<p>Vous n'avez pas de compte:</p>
-     	<a class="underlineHover" href="#">iscruvez-vous</a>
-    </div>
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Mot de passe oublié ?</a>
+    	<p>Vous n'avez pas de compte:</p><a class="underlineHover" href="#">inscrivez-vous</a>
+      	<a class="underlineHover" href="#">Mot de passe oublié ?</a>
     </div>
 
   </div>

@@ -23,6 +23,7 @@ $tab_cocktail = getCocktails();
 	<div class="jumbotron" style="height: 21rem;">
 	  <h1 class="display-4" style="font-size: 4rem;">Bienvenue sur la page d'acceuil </h1>
 	  <p class="lead" style="font-size: 2rem;"> Choisissez votre cocktail</p>
+	  <?php echo  '<p>user: ' . $_SESSION['user']->getPseudo() . '</p>'?>
 	</div>
 	<!-- Liste cocktail -->
 	<div class="container">

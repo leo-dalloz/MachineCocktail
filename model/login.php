@@ -1,6 +1,7 @@
 <?php
 session_start();
-require '../model/db.php';
+require 'db.php';
+require 'User.php';
 
 $obj = new stdClass();
 $obj->message = "Mauvais nom d'utilisateur ou mauvais mot de passe";
@@ -14,7 +15,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 	$resultat = $dbResult->fetch_assoc();
 	if (password_verify($_POST['password'], $resultat['password']))
 	{
-		$_SESSION['user'] = $resultat['idUser'];
+		$_SESSION['user'] = new User ($resultat['idUser']);
     	$obj->success = true;
 	}
 }

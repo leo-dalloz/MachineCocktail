@@ -22,15 +22,19 @@
 
     <!-- Login Form -->
     <form id="form-login" method="post" action="../model/login.php">
-      <input type="text" name="username" id="login" class="fadeIn second" placeholder="login">
-      <input type="password" name="password" id="password" class="fadeIn third" placeholder="password">
+      <input type="text" name="username" id="login" class="fadeIn second" placeholder="pseudo">
+      <input type="password" name="password" id="password" class="fadeIn third" placeholder="mot de passe">
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
     <div id="messages" style="display: none; color: red;"></div>
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
+    	<p>Vous n'avez pas de compte:</p>
+     	<a class="underlineHover" href="#">iscruvez-vous</a>
+    </div>
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Mot de passe oublié ?</a>
     </div>
 
   </div>

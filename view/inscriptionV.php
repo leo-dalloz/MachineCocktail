@@ -30,6 +30,9 @@
       <input type="submit" class="fadeIn fourth" value="Envoyer">
     </form>
     <div id="messageErrorInscription" style="display: none; color: red;"></div>
+    <div id="formFooter">
+      <a class="underlineHover" href="connexionC.php">Connexion</a> <br>
+    </div>
 
     
   </div>

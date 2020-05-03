@@ -10,8 +10,7 @@
             if (data) {
                 /* le user est connecté */
                 $('#deconnexion').append(
-                    $('<button type="button" class="btn btn-outline-primary"><button/>')
-                        .html('Déconnexion')
+                    $('<button type="button" class="btn btn-outline-primary">Déconnexion<button/>')
                         .on('click', function () {
                             $.ajax({
                                 url: 'http://leodalloz.alwaysdata.net/model/logout.php',

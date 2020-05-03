@@ -1,4 +1,5 @@
 (function(){
+
     'use strict';
     $(() => {
         $.ajax({
@@ -8,7 +9,8 @@
             if (data) {
                 /* le user est connecté */
                 $('#deconnexion').append(
-                    $('<button type="button" class="btn btn-outline-primary">Déconnexion<button/>')
+                    $('<button type="button" class="btn btn-outline-primary">')
+                        .html('Déconnexion')
                         .on('click', function () {
                             $.ajax({
                                 url: 'http://leodalloz.alwaysdata.net/model/logout.php',
@@ -25,9 +27,9 @@
         }).fail(function () {
             $('body').html('Une erreur critique est arrivée.');
         });
-
-	$(document).ready( function(){
     });
+    
+	$(document).ready( function(){
 		$(".check-icon").hide();
 		var cocktailName = ""
 		$(".btn-fabriquer").click(function(){

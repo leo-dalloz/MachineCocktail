@@ -9,7 +9,7 @@
             if (data) {
                 /* le user est connecté */
                 $('#deconnexion').append(
-                    $('<button type="button" class="btn btn-outline-primary">')
+                    $('<button type="button" class="btn btn-outline-primary nav-link">')
                         .html('Déconnexion')
                         .on('click', function () {
                             $.ajax({
@@ -28,7 +28,7 @@
             $('body').html('Une erreur critique est arrivée.');
         });
     });
-    
+
 	$(document).ready( function(){
 		$(".check-icon").hide();
 		var cocktailName = ""

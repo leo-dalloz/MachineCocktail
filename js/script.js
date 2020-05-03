@@ -9,7 +9,7 @@
             if (data) {
                 /* le user est connecté */
                 $('#deconnexion').append(
-                    $('<button type="button" class="btn btn-outline-primary nav-link">')
+                    $('<button type="button" class="btn btn-outline-primary">')
                         .html('Déconnexion')
                         .on('click', function () {
                             $.ajax({

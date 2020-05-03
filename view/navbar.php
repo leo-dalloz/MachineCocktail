@@ -19,8 +19,8 @@
         <?php 
       }
       ?>
-    <li class="nav-item" id="deconnexion"></li>
     </ul>
+    <div id="deconnexion" class="form-inline my-2 my-lg-0"></div>
   </div>
 </nav>
 

@@ -1,6 +1,4 @@
 (function(){
-
-	$(document).ready( function(){
     'use strict';
     $(() => {
         $.ajax({
@@ -27,6 +25,8 @@
         }).fail(function () {
             $('body').html('Une erreur critique est arrivée.');
         });
+
+	$(document).ready( function(){
     });
 		$(".check-icon").hide();
 		var cocktailName = ""

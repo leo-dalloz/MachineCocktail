@@ -13,6 +13,10 @@ $tab_cocktail = getCocktails();
 	<link rel="stylesheet"  href="../css/bootstrap.min.css">
 	<link rel="stylesheet"  href="../css/style.css">
 	<script src="https://kit.fontawesome.com/799c725346.js" crossorigin="anonymous"></script>
+	
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
@@ -76,8 +80,5 @@ $tab_cocktail = getCocktails();
 
 
 
-	<script src="../js/jquery-3.4.1.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

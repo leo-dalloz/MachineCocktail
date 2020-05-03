@@ -31,7 +31,7 @@
     </form>
     <div id="messageErrorInscription" style="display: none; color: red;"></div>
     <div id="formFooter">
-      <a class="underlineHover" href="connexionC.php">Connexion</a> <br>
+      <a class="underlineHover" href="loginC.php">Connexion</a> <br>
     </div>
 
     

@@ -9,9 +9,17 @@
       <li class="nav-item">
         <a class="nav-link" href="#" style="font-size: 3rem;">Classement</a>
       </li>
-      <li class="nav-item" id="deconnexion">
-        
-      </li>
+      <?php 
+      if($_SESSION['user']->getAdmin())
+      {
+      ?>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="font-size: 3rem;">Admin</a>
+        </li>
+        <?php 
+      }
+      ?>
+    <li class="nav-item" id="deconnexion"></li>
     </ul>
   </div>
 </nav>
